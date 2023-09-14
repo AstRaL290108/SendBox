@@ -1,0 +1,86 @@
+@font-face {
+  font-weight: 400;
+  font-family: title;
+  src: url("/src/project-file/font/title-font.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: main;
+  src: url("/src/project-file/font/main-font.ttf");
+}
+
+*{font-family: title;}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	overflow-x: hidden;
+	background-color: rgb(0, 26, 107);
+
+	width: 100vw;
+	height: 100vh;
+}
+body::-webkit-scrollbar {width: 0px;}
+
+.wrapper {
+	border: solid 3px rgb(255, 255, 255);
+	background-color: rgb(163, 185, 255);
+
+	padding: 15px;
+	width: 40vw;
+}
+
+
+.title {
+	color: black;
+	font-size: 35px;
+	text-align: center;
+
+	border-bottom: solid 3px black;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+
+/*Form Style*/
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form input {
+	border: solid 3px black;
+	border-radius: 25px;
+
+	padding: 10px;
+	margin: 5px;
+
+	font-size: 20px;
+	color: black;
+	width: 80%;
+}
+.form button {
+	border: solid 3px black;
+	border-radius: 25px;
+
+	padding: 10px;
+	margin: 5px;
+
+	font-size: 20px;
+	color: black;
+	width: 50%;
+}
+.form button:hover {
+	border: solid 3px black;
+	background-color: black;
+	border-radius: 25px;
+
+	padding: 10px;
+	margin: 5px;
+
+	font-size: 20px;
+	color: white;
+	width: 50%;
+}

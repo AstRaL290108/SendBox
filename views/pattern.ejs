@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/main-style.css">
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascript/main-script.js"></script>
+	<script src="/javascript/socket.js"></script>
+
+	<title>SendBox</title>
+</head>
+<body>
+
+	<div class="wrapper">
+	
+		<header>
+			<div class="left-panel">
+				<img src="/src/project-file/image/icon.png" alt="" class="preview">
+				<div class="title">SendBox</div>
+			</div>
+
+			<div class="left-panel">
+				<a href="" class="support">Поддержка</a>
+				<img style="border-radius: 50%;" src="/src/project-file/image/defold-avatar.png" alt="" class="avatar">
+			</div>
+		</header>
+
+		<div class="content">
+			
+			<div class="chat"></div>
+
+			<div class="send-panel">
+				<input class="message-input" placeholder="Введите сообщение..." type="text">
+				<img onclick="send_message();" class="send" src="/src/project-file/image/send-button.png" alt="">
+			</div>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>

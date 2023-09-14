@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/registration-style.css">
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascript/singin.js"></script>
+
+	<title>Регистрация</title>
+</head>
+<body>
+
+	<div class="wrapper">
+	
+		<div class="title">Войти</div>
+
+		<div class="form">
+			<div style="font-size: 20px;color: red;" class="error"></div>
+			<input type="text" class="login" placeholder="Логин">
+			<input type="password" class="password" placeholder="Пароль">
+
+			<button class="submit" onclick="Submit();">Продолжить</button>
+		</div>
+
+		<div class="links">
+			<a href="../../register">Зарегистрироваться</a>
+		</div>
+
+	</div>
+	
+</body>
+</html>

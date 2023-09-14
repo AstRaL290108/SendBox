@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/registration-style.css">
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascript/registration.js"></script>
+
+	<title>Регистрация</title>
+</head>
+<body>
+
+	<div class="wrapper">
+	
+		<div class="title">Регистрация</div>
+
+		<div class="form">
+			<div style="font-size: 20px;color: red;" class="error"></div>
+			<input type="text" class="login" placeholder="Логин">
+			<input type="password" class="password" placeholder="Пароль">
+
+			<input type="text" class="name" placeholder="Никнейм">
+			<input onchange="ViewImg()" style="position: absolute;top: -150px;" type="file" class="avatar">
+
+			<button onclick="ClickButtonSelect();" class="select-image">Выбрать аватар</button>
+			<img src="" alt="Аватар не выбран" style="border: solid 2px black;width: 250px;height: 250px;">
+
+			<button class="submit" onclick="Submit();">Продолжить</button>
+		</div>
+
+		<div class="links">
+			<a href="../../../singin">Войти в аккаунт</a>
+		</div>
+
+	</div>
+	
+</body>
+</html>
